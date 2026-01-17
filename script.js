@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Dynamic Year ---
+    document.getElementById('year').textContent = new Date().getFullYear();
     
     // 1. Mobile Menu Toggle
     const menuBtn = document.querySelector('.mobile-menu-btn');

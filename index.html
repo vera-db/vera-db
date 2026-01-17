@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Vera | The AI-Powered Vertica IDE</title>
-    <meta name="description" content="Vera is the intelligent IDE for Vertica. optimize SQL queries, visualize schemas, and code faster with AI-driven suggestions.">
+    <meta name="description"
+        content="Vera is the intelligent IDE for Vertica. optimize SQL queries, visualize schemas, and code faster with AI-driven suggestions.">
     <meta name="keywords" content="Vertica, SQL IDE, Database Tool, AI SQL, Big Data">
     <meta name="author" content="Vera IDE">
-    
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.vera-db.com/">
     <meta property="og:title" content="Vera | The AI-Powered Vertica IDE">
-    <meta property="og:description" content="Write Vertica SQL at the speed of thought. AI optimization and schema awareness built-in.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Vera+IDE+Preview"> 
+    <meta property="og:description"
+        content="Write Vertica SQL at the speed of thought. AI optimization and schema awareness built-in.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Vera+IDE+Preview">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Vera | The AI-Powered Vertica IDE">
-    <meta property="twitter:description" content="Write Vertica SQL at the speed of thought. AI optimization and schema awareness built-in.">
+    <meta property="twitter:description"
+        content="Write Vertica SQL at the speed of thought. AI optimization and schema awareness built-in.">
     <meta property="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Vera+IDE+Preview">
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <div class="background-mesh"></div>
@@ -31,7 +38,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Vera<span class="dot">.</span></a>
-            
+
             <button class="mobile-menu-btn" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -54,14 +61,16 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <span class="badge fade-in-up">v1.0 is now live</span>
-                <h1 class="fade-in-up">Query Vertica at the <br> <span class="gradient-text" id="typing-text"></span></h1>
-                <p class="fade-in-up">Meet Vera. The intelligent IDE that understands your schema, optimizes your SQL, and turns natural language into complex Vertica queries instantly.</p>
+                <h1 class="fade-in-up">Query Vertica at the <br> <span class="gradient-text" id="typing-text"></span>
+                </h1>
+                <p class="fade-in-up">Meet Vera. The intelligent IDE that understands your schema, optimizes your SQL,
+                    and turns natural language into complex Vertica queries instantly.</p>
                 <div class="cta-group fade-in-up">
                     <a href="mailto:support@vera-db.com" class="btn-primary">Contact Sales</a>
                     <a href="#features" class="btn-secondary">Learn More</a>
                 </div>
             </div>
-            
+
             <div class="hero-visual fade-in-up">
                 <div class="code-window glass">
                     <div class="window-header">
@@ -71,7 +80,8 @@
                         <span class="filename">main.sql — Vera</span>
                     </div>
                     <div class="window-body" id="code-body">
-                        <div class="line"><span class="num">1</span> <span class="comment">-- AI: Find top 5 users by spend in Q4</span></div>
+                        <div class="line"><span class="num">1</span> <span class="comment">-- AI: Find top 5 users by
+                                spend in Q4</span></div>
                     </div>
                 </div>
                 <div class="ai-popup">
@@ -96,21 +106,24 @@
                     <div class="card-content">
                         <i class="fa-solid fa-wand-magic-sparkles icon"></i>
                         <h3>Natural Language to SQL</h3>
-                        <p>Describe your data needs in plain English. Vera understands Vertica specific functions and syntax nuances.</p>
+                        <p>Describe your data needs in plain English. Vera understands Vertica specific functions and
+                            syntax nuances.</p>
                     </div>
                 </div>
                 <div class="card glass spotlight">
                     <div class="card-content">
                         <i class="fa-solid fa-bolt icon"></i>
                         <h3>Performance Tuning</h3>
-                        <p>Vera analyzes your `EXPLAIN` plans in real-time and suggests projections or partition changes to optimize speed.</p>
+                        <p>Vera analyzes your `EXPLAIN` plans in real-time and suggests projections or partition changes
+                            to optimize speed.</p>
                     </div>
                 </div>
                 <div class="card glass spotlight">
                     <div class="card-content">
                         <i class="fa-solid fa-shield-halved icon"></i>
                         <h3>Schema Awareness</h3>
-                        <p>Autocomplete that actually works. Vera indexes your metadata to provide intelligent context-aware suggestions.</p>
+                        <p>Autocomplete that actually works. Vera indexes your metadata to provide intelligent
+                            context-aware suggestions.</p>
                     </div>
                 </div>
             </div>
@@ -130,10 +143,10 @@
             </div>
         </div>
     </section>
-
+    
     <footer>
         <div class="container footer-container">
-            <p>&copy; 2024 Vera IDE. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Vera IDE. All rights reserved.</p>
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -144,4 +157,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
